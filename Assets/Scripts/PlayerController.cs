@@ -20,7 +20,7 @@ public class PlayerController : MonoBehaviour {
 		transform.Rotate (0, Input.GetAxis ("Horizontal")*60*Time.deltaTime, 0);
 
 		//Tekan Space untuk melontarkan Ball
-		if (Input.GetKeyDown (KeyCode.Space)) {
+		if (Input.GetKeyDown (KeyCode.Space) || Input.GetMouseButtonDown(0)) {
 			GameObject _ball = GameObject.Instantiate (ball, 
 				titikLontar.transform.position, titikLontar.transform.rotation);
 			_ball.GetComponent<Rigidbody> ().AddForce (_ball.transform.forward 
