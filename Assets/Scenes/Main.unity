@@ -700,6 +700,12 @@ Prefab:
       propertyPath: powerLontar
       value: 1000
       objectReference: {fileID: 0}
+    - target: {fileID: 114926979689969682, guid: de839310d13ad734baa0f8c674e91ae5,
+        type: 2}
+      propertyPath: peluru
+      value: 
+      objectReference: {fileID: 1199669695796296, guid: 6c2a443164efe2e4a87978eb32b3cc95,
+        type: 2}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: de839310d13ad734baa0f8c674e91ae5, type: 2}
   m_IsPrefabParent: 0
