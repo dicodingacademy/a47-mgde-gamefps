@@ -21,7 +21,6 @@ public class ShowParticle : MonoBehaviour
 			Destroy (gameObject);
 			GameObject p = GameObject.Instantiate (particle,transform.position,transform.rotation);
 			Destroy (p,1);
-
 		} 
 	}
 
