@@ -1,12 +1,10 @@
-﻿using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
+﻿using UnityEngine;
 using UnityEngine.AI; 
 [RequireComponent(typeof (UnityEngine.AI.NavMeshAgent))] 
 
 public class AIEnemyControl : MonoBehaviour {
 
-	public UnityEngine.AI.NavMeshAgent agent { get; private set; }   
+	public NavMeshAgent agent { get; private set; }   
 	public float speed;
 	GameObject target; 
 
@@ -21,7 +19,13 @@ public class AIEnemyControl : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
-		if (target != null)
-			agent.SetDestination(target.transform.position); 
+        if (target != null) {
+            agent.SetDestination(target.transform.position);
+        }
 	}
+
+    public void StopMove() {
+        agent.updateRotation = false;
+        agent.updatePosition = false;
+    }
 }

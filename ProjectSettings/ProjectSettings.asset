@@ -243,8 +243,8 @@ PlayerSettings:
   AndroidTargetDevice: 0
   AndroidSplashScreenScale: 0
   androidSplashScreen: {fileID: 0}
-  AndroidKeystoreName: 
-  AndroidKeyaliasName: 
+  AndroidKeystoreName: D:/DicodingAcademy/Associate/Github/Game FPS/Game FPS/user.keystore
+  AndroidKeyaliasName: aris
   AndroidTVCompatibility: 1
   AndroidIsGame: 1
   AndroidEnableTango: 0
