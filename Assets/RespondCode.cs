@@ -8,6 +8,8 @@ public class RespondCode : MonoBehaviour {
 
     public Image btnPlay;
     public string nameScene;
+    public Color Normal = Color.yellow;
+    public Color Click = Color.red;
     private bool isHit;
 
 	// Use this for initialization
@@ -29,7 +31,7 @@ public class RespondCode : MonoBehaviour {
             return;
         }
         else {
-            btnPlay.color = Color.white;
+            btnPlay.color = Normal;
         }
     }
 
@@ -38,7 +40,7 @@ public class RespondCode : MonoBehaviour {
     }
 
     public void SetClick() {
-        btnPlay.color = Color.red;
+        btnPlay.color = Click;
         SceneManager.LoadScene(nameScene);
     }
 }

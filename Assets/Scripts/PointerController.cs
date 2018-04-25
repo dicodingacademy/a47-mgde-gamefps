@@ -2,31 +2,30 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class LaserControl : MonoBehaviour
+public class PointerController : MonoBehaviour
 {
-
-    private LineRenderer laser;
 
     // Use this for initialization
     void Start()
     {
-        laser = GetComponent<LineRenderer>();
+
     }
 
     // Update is called once per frame
     void Update()
     {
-        laser.SetPosition(0, transform.position);
         RaycastHit hit;
         if (Physics.Raycast(transform.position, transform.forward, out hit))
         {
+            Debug.Log("name: "+hit.transform.tag);
             if (hit.collider)
             {
-                laser.SetPosition(1, hit.point);
+               // transform.position = hit.point;
                 if (hit.transform.tag.Equals("UI"))
                 {
+                    Debug.Log("Hit UI");
                     hit.transform.GetComponent<RespondCode>().SetHit();
-                    if (OVRInput.GetDown(OVRInput.RawButton.A))
+                    if (Input.GetMouseButtonUp(0) || OVRInput.GetUp(OVRInput.Touch.PrimaryTouchpad))
                     {
                         hit.transform.GetComponent<RespondCode>().SetClick();
                     }
@@ -35,7 +34,7 @@ public class LaserControl : MonoBehaviour
         }
         else
         {
-            laser.SetPosition(1, transform.forward * 5000);
+           // transform.position = transform.forward*10;
         }
     }
 }
