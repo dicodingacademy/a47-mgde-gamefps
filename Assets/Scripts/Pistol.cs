@@ -17,7 +17,7 @@ public class Pistol : MonoBehaviour {
 	// Update is called once per frame
 	void Update () {
         //Tekan Space untuk melontarkan Ball
-        if (Input.GetKeyDown(KeyCode.Space) || Input.GetMouseButtonDown(0) || OVRInput.GetDown(OVRInput.RawButton.A))
+        if (Input.GetKeyDown(KeyCode.Space) || Input.GetMouseButtonDown(0))
         {
             GameObject _ball = GameObject.Instantiate(peluru,
                 titikMuncul.transform.position, titikMuncul.transform.rotation);
