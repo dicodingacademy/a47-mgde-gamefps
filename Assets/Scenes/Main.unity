@@ -244,7 +244,7 @@ GameObject:
   - component: {fileID: 333806173}
   - component: {fileID: 333806172}
   m_Layer: 0
-  m_Name: SMP1_LOOP_Zero8 _1
+  m_Name: Musik
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
