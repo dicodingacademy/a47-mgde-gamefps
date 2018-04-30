@@ -800,7 +800,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 14063bef37a71fa439bd135ed941a6a6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  btnPlay: {fileID: 829872692}
+  imgButton: {fileID: 829872692}
   nameScene: Scenes/Main
   Normal: {r: 1, g: 0.92156863, b: 0.015686275, a: 1}
   Click: {r: 1, g: 0, b: 0, a: 1}

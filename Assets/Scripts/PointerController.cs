@@ -14,27 +14,25 @@ public class PointerController : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        // mengecek object yang terdapat didepan camera
         RaycastHit hit;
         if (Physics.Raycast(transform.position, transform.forward, out hit))
         {
-            Debug.Log("name: "+hit.transform.tag);
+            // mengecek object yang dideteksi harus memiliki collider
             if (hit.collider)
             {
-               // transform.position = hit.point;
+                // pastikan object yang dideteksi memiliki tag UI
                 if (hit.transform.tag.Equals("UI"))
                 {
-                    Debug.Log("Hit UI");
                     hit.transform.GetComponent<RespondCode>().SetHit();
+
+                    // ketika user menekan/klik tombol
                     if (Input.GetMouseButtonUp(0) || OVRInput.GetUp(OVRInput.Touch.PrimaryTouchpad))
                     {
                         hit.transform.GetComponent<RespondCode>().SetClick();
                     }
                 }
             }
-        }
-        else
-        {
-           // transform.position = transform.forward*10;
         }
     }
 }
