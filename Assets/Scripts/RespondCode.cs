@@ -21,7 +21,8 @@ public class RespondCode : MonoBehaviour {
 	void Update () {
 	    
 	}
-
+    
+    // digunakan untuk mengganti warna pada Background di tombol 
     private void FixedUpdate()
     {
         if (isHit)
@@ -35,10 +36,12 @@ public class RespondCode : MonoBehaviour {
         }
     }
 
+    // ketika pointer atau laser diatas tombol
     public void SetHit() {
         isHit = true;
     }
 
+    // ketika klik tombol
     public void SetClick() {
         btnPlay.color = Click;
         SceneManager.LoadScene(nameScene);

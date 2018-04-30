@@ -15,7 +15,8 @@ public class MonstersSpawner : MonoBehaviour {
 		
 	}
 
-	IEnumerator StartSpawning() {
+    // memunculkan enemy setiap antara 5 sampai 7 detik.
+    IEnumerator StartSpawning() {
 		yield return new WaitForSeconds (Random.Range(5f, 7f));
 		Instantiate (monster, transform.position, Quaternion.identity);
 		StartCoroutine (StartSpawning ());

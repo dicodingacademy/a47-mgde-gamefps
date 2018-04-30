@@ -16,16 +16,25 @@ public class LaserControl : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        // posisi laser yang dekat dengan camera
         laser.SetPosition(0, transform.position);
+
+        // mengecek object yang terdapat didepan camera
         RaycastHit hit;
         if (Physics.Raycast(transform.position, transform.forward, out hit))
         {
+            // mengecek object yang dideteksi harus memiliki collider
             if (hit.collider)
             {
+                //jarak ujung laser berdasarkan posisi laser terkena object
                 laser.SetPosition(1, hit.point);
+              
+                // pastikan object yang dideteksi memiliki tag UI
                 if (hit.transform.tag.Equals("UI"))
                 {
                     hit.transform.GetComponent<RespondCode>().SetHit();
+                    
+                    // ketika user menekan/klik tombol
                     if (OVRInput.GetDown(OVRInput.RawButton.A))
                     {
                         hit.transform.GetComponent<RespondCode>().SetClick();
@@ -35,6 +44,7 @@ public class LaserControl : MonoBehaviour
         }
         else
         {
+            // memberi batasan jarak laser terjauh dengan nilai maksimal 5000
             laser.SetPosition(1, transform.forward * 5000);
         }
     }

@@ -15,6 +15,7 @@ public class SwitchController : MonoBehaviour
         controllerDefault.SetActive(false);
     }
 
+    // mengecek apakah terdeteksi dengan controller atau tidak
     public bool ControllerIsConnected
     {
         get
@@ -27,6 +28,7 @@ public class SwitchController : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        // Jika controller gearvr terhubung, maka controller defaultnya tidak dimunculkan. dan sebaliknya 
         if (ControllerIsConnected)
         {
             if (isShow)
@@ -43,7 +45,5 @@ public class SwitchController : MonoBehaviour
                 isShow = true;
             }
         }
-
-        Debug.Log("ControllerIsConnected:" + ControllerIsConnected + ", isShow:" + isShow);
     }
 }
