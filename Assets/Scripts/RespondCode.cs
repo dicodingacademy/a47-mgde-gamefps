@@ -4,7 +4,8 @@ using UnityEngine;
 using UnityEngine.SceneManagement;
 using UnityEngine.UI;
 
-public class RespondCode : MonoBehaviour {
+public class RespondCode : MonoBehaviour
+{
 
     public Image btnPlay;
     public string nameScene;
@@ -12,16 +13,19 @@ public class RespondCode : MonoBehaviour {
     public Color Click = Color.red;
     private bool isHit;
 
-	// Use this for initialization
-	void Start () {
-		
-	}
-	
-	// Update is called once per frame
-	void Update () {
-	    
-	}
+    // Use this for initialization
+    void Start()
+    {
 
+    }
+
+    // Update is called once per frame
+    void Update()
+    {
+
+    }
+
+    // digunakan untuk mengganti warna pada Background di tombol 
     private void FixedUpdate()
     {
         if (isHit)
@@ -30,16 +34,21 @@ public class RespondCode : MonoBehaviour {
             isHit = false;
             return;
         }
-        else {
+        else
+        {
             btnPlay.color = Normal;
         }
     }
 
-    public void SetHit() {
+    // ketika pointer atau laser diatas tombol
+    public void SetHit()
+    {
         isHit = true;
     }
 
-    public void SetClick() {
+    // ketika klik tombol
+    public void SetClick()
+    {
         btnPlay.color = Click;
         SceneManager.LoadScene(nameScene);
     }

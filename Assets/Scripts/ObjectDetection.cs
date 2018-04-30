@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
-public class ShowParticle : MonoBehaviour
+public class ObjectDetection : MonoBehaviour
 {
 
     public GameObject particle;
@@ -20,9 +20,12 @@ public class ShowParticle : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (anim.GetCurrentAnimatorStateInfo(0).IsName("Destroy")) {
+        // jika animasi pada enemy selesai
+        // menghilangkan enemy, menambahkan coin dan menampilkan partikel
+        if (anim.GetCurrentAnimatorStateInfo(0).IsName("Destroy"))
+        {
             Destroy(gameObject);
-            ScoringController.GetInstance().addCoin();
+            ScoringController.GetInstance().addScore();
             GameObject p = GameObject.Instantiate(particle, transform.position, transform.rotation);
             Destroy(p, 1);
         }
@@ -30,12 +33,16 @@ public class ShowParticle : MonoBehaviour
 
     void OnCollisionEnter(Collision collision)
     {
-        if (collision.gameObject.tag.Equals("Bullet")) {
+        // jika enemy terkena peluru
+        if (collision.gameObject.tag.Equals("Bullet"))
+        {
             anim.SetBool("isDead", true);
             aiEnemy.StopMove();
         }
 
-        if (collision.gameObject.tag.Equals("Player")) {
+        // jika enemy terkena player
+        if (collision.gameObject.tag.Equals("Player"))
+        {
             aiEnemy.StopMove();
             SceneManager.LoadScene("Scenes/Gameover");
         }
