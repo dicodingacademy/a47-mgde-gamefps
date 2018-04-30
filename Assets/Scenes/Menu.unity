@@ -876,7 +876,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 14063bef37a71fa439bd135ed941a6a6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  btnPlay: {fileID: 829872692}
+  imgButton: {fileID: 829872692}
   nameScene: Scenes/Main
   Normal: {r: 1, g: 0.92156863, b: 0.015686275, a: 1}
   Click: {r: 1, g: 0, b: 0, a: 1}
@@ -1016,7 +1016,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b7cfb1ddd3d1b0d4ab681aa0239baa51, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  controllerDefault: {fileID: 0}
 --- !u!224 &2117114216
 RectTransform:
   m_ObjectHideFlags: 0

@@ -7,7 +7,7 @@ using UnityEngine.UI;
 public class RespondCode : MonoBehaviour
 {
 
-    public Image btnPlay;
+    public Image imgButton;
     public string nameScene;
     public Color Normal = Color.yellow;
     public Color Click = Color.red;
@@ -30,13 +30,13 @@ public class RespondCode : MonoBehaviour
     {
         if (isHit)
         {
-            btnPlay.color = Color.green;
+            imgButton.color = Color.green;
             isHit = false;
             return;
         }
         else
         {
-            btnPlay.color = Normal;
+            imgButton.color = Normal;
         }
     }
 
@@ -49,7 +49,7 @@ public class RespondCode : MonoBehaviour
     // ketika klik tombol
     public void SetClick()
     {
-        btnPlay.color = Click;
+        imgButton.color = Click;
         SceneManager.LoadScene(nameScene);
     }
 }
