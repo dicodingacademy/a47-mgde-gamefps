@@ -18,7 +18,7 @@ public class Pistol : MonoBehaviour
     void Update()
     {
         //Tekan Space untuk melontarkan Ball
-        if (Input.GetKeyDown(KeyCode.Space) || Input.GetMouseButtonDown(0))
+        if (Input.GetKeyDown(KeyCode.Space))
         {
             // Memunculkan Bola/Peluru dengan posisi dan rotasi yang sama dengan gameobject titikMuncul
             GameObject _ball = GameObject.Instantiate(peluru, titikMuncul.transform.position, titikMuncul.transform.rotation);
