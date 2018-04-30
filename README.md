@@ -1,5 +1,5 @@
 # Menjadi-Game-Developer-Expert
-Repositori ini berisi project **Modul 6** dan **Modul 8** yang ada di Academy [Menjadi Game Developer Expert][menjadi-game-developer-expert]. Untuk beralih ke project yang lain, Anda bisa memilih project pada menu `branch`.
+Repositori ini berisi project **Modul 6**, **Modul 8** dan **Modul 9** yang ada di Academy [Menjadi Game Developer Expert][menjadi-game-developer-expert]. Untuk beralih ke project yang lain, Anda bisa memilih project pada menu `branch`.
 
 Ingin belajar membuat game untuk menjadi [Menjadi Game Developer Expert][menjadi-game-developer-expert]?
 
