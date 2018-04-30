@@ -15,6 +15,7 @@ public class Peluru : MonoBehaviour {
 	}
 
 	void OnCollisionEnter(Collision other){
+        //Jika peluru menyentuh benda yang memiliki collider maka object tersebut akan terdestroy
 		Destroy (gameObject);
 	}
 }

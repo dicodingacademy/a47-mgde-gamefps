@@ -22,7 +22,7 @@ public class ShowParticle : MonoBehaviour
     {
         if (anim.GetCurrentAnimatorStateInfo(0).IsName("Destroy")) {
             Destroy(gameObject);
-            ScoringController.GetInstance().addCoin();
+            ScoringController.GetInstance().addScore();
             GameObject p = GameObject.Instantiate(particle, transform.position, transform.rotation);
             Destroy(p, 1);
         }
