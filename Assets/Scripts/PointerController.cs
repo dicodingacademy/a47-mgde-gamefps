@@ -24,12 +24,12 @@ public class PointerController : MonoBehaviour
                 // pastikan object yang dideteksi memiliki tag UI
                 if (hit.transform.tag.Equals("UI"))
                 {
-                    hit.transform.GetComponent<RespondCode>().SetHit();
+                    hit.transform.GetComponent<RespondButton>().SetHit();
 
                     // ketika user menekan/klik tombol
                     if (Input.GetMouseButtonUp(0) || OVRInput.GetUp(OVRInput.Touch.PrimaryTouchpad))
                     {
-                        hit.transform.GetComponent<RespondCode>().SetClick();
+                        hit.transform.GetComponent<RespondButton>().SetClick();
                     }
                 }
             }

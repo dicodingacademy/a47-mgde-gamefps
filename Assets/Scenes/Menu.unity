@@ -323,11 +323,6 @@ Prefab:
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 185ac7645ac165749b176e5a085bbea9, type: 2}
   m_IsPrefabParent: 0
---- !u!1 &651520032 stripped
-GameObject:
-  m_PrefabParentObject: {fileID: 1501642364727480, guid: a79afeffb53466f488615e58cf958e4c,
-    type: 2}
-  m_PrefabInternal: {fileID: 1523369475}
 --- !u!1 &775418672
 GameObject:
   m_ObjectHideFlags: 0
@@ -395,7 +390,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Target Monster
+  m_Text: Game FPS
 --- !u!222 &775418675
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -843,6 +838,10 @@ Prefab:
       propertyPath: m_RootOrder
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 4597523696986184, guid: a79afeffb53466f488615e58cf958e4c, type: 2}
+      propertyPath: m_LocalPosition.z
+      value: 4.5
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: a79afeffb53466f488615e58cf958e4c, type: 2}
   m_IsPrefabParent: 0
@@ -1028,7 +1027,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b7cfb1ddd3d1b0d4ab681aa0239baa51, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  controllerDefault: {fileID: 651520032}
 --- !u!224 &2117114216
 RectTransform:
   m_ObjectHideFlags: 0
