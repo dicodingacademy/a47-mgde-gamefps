@@ -1504,11 +1504,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 54831f0ac12492d4e952dd7bcb4a7dd1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
---- !u!1 &2022187337 stripped
-GameObject:
-  m_PrefabParentObject: {fileID: 1501642364727480, guid: a79afeffb53466f488615e58cf958e4c,
-    type: 2}
-  m_PrefabInternal: {fileID: 1339203078}
 --- !u!1 &2070263364
 GameObject:
   m_ObjectHideFlags: 0
@@ -1518,7 +1513,6 @@ GameObject:
   m_Component:
   - component: {fileID: 2070263366}
   - component: {fileID: 2070263365}
-  - component: {fileID: 2070263367}
   m_Layer: 0
   m_Name: GameoverManager
   m_TagString: Untagged
@@ -1552,18 +1546,6 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &2070263367
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 2070263364}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: b7cfb1ddd3d1b0d4ab681aa0239baa51, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  controllerDefault: {fileID: 2022187337}
 --- !u!1 &2129752876
 GameObject:
   m_ObjectHideFlags: 0
