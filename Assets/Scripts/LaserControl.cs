@@ -32,12 +32,12 @@ public class LaserControl : MonoBehaviour
                 // pastikan object yang dideteksi memiliki tag UI
                 if (hit.transform.tag.Equals("UI"))
                 {
-                    hit.transform.GetComponent<RespondCode>().SetHit();
+                    hit.transform.GetComponent<RespondButton>().SetHit();
                     
                     // ketika user menekan/klik tombol
                     if (OVRInput.GetDown(OVRInput.RawButton.A))
                     {
-                        hit.transform.GetComponent<RespondCode>().SetClick();
+                        hit.transform.GetComponent<RespondButton>().SetClick();
                     }
                 }
             }
