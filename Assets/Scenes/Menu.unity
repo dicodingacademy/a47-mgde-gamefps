@@ -471,7 +471,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Target Monster
+  m_Text: Game FPS
 --- !u!222 &775418675
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -890,7 +890,7 @@ GameObject:
   - component: {fileID: 1591917930}
   - component: {fileID: 1591917929}
   m_Layer: 0
-  m_Name: musik
+  m_Name: Musik
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
