@@ -985,7 +985,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1172697739}
+      - m_Target: {fileID: 0}
         m_MethodName: SetClick
         m_Mode: 1
         m_Arguments:
@@ -1215,8 +1215,6 @@ GameObject:
   - component: {fileID: 1172697737}
   - component: {fileID: 1172697736}
   - component: {fileID: 1172697735}
-  - component: {fileID: 1172697738}
-  - component: {fileID: 1172697739}
   m_Layer: 0
   m_Name: BackToMenu
   m_TagString: UI
@@ -1300,33 +1298,6 @@ Canvas:
   m_SortingLayerID: 0
   m_SortingOrder: 0
   m_TargetDisplay: 0
---- !u!65 &1172697738
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1172697733}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Size: {x: 19.64, y: 3.31, z: 1}
-  m_Center: {x: 0, y: 0, z: 0}
---- !u!114 &1172697739
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1172697733}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 14063bef37a71fa439bd135ed941a6a6, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  imgButton: {fileID: 829872692}
-  nameScene: Scenes/Menu
-  Normal: {r: 1, g: 0.92156863, b: 0.015686275, a: 1}
-  Click: {r: 1, g: 0, b: 0, a: 1}
 --- !u!1 &1582243376
 GameObject:
   m_ObjectHideFlags: 0
@@ -1407,7 +1378,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1582243376}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 3.63, z: -0.32867506}
+  m_LocalPosition: {x: 0, y: 3.63, z: 0}
   m_LocalScale: {x: 0.92324644, y: 0.92324454, z: 0.92324454}
   m_Children: []
   m_Father: {fileID: 0}
