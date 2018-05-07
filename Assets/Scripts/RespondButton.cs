@@ -4,7 +4,7 @@ using UnityEngine;
 using UnityEngine.SceneManagement;
 using UnityEngine.UI;
 
-public class RespondCode : MonoBehaviour
+public class RespondButton : MonoBehaviour
 {
 
     public Image imgButton;
