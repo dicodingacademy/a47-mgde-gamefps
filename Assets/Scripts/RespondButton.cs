@@ -4,14 +4,14 @@ using UnityEngine;
 using UnityEngine.SceneManagement;
 using UnityEngine.UI;
 
-public class RespondCode : MonoBehaviour
+public class RespondButton : MonoBehaviour
 {
 
     public Image imgButton;
     public string nameScene;
     public Color Normal = Color.yellow;
     public Color Click = Color.red;
-    private bool isHit;
+    private bool isHit = false;
 
     // Use this for initialization
     void Start()
@@ -25,7 +25,7 @@ public class RespondCode : MonoBehaviour
 
     }
 
-    // digunakan untuk mengganti warna pada Background di tombol 
+    // digunakan untuk mengganti warna pada Background di tombol
     private void FixedUpdate()
     {
         if (isHit)
@@ -52,4 +52,5 @@ public class RespondCode : MonoBehaviour
         imgButton.color = Click;
         SceneManager.LoadScene(nameScene);
     }
+
 }
